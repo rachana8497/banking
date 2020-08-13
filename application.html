@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>application</title>
+	<link rel="stylesheet" type="text/css" href="application.css">
+	<script>
+		function clickalert(){
+			alert("Applied successfully!");
+		}
+	</script>
+</head>
+<body>
+   <div class="wrapper">
+   	<h2>Application form</h2>
+   	<form>
+   		<label>Firstname: </label>
+   		<input type="text" name="firstname" required><br><br>
+   		<label>Lastname: </label>
+   		<input type="text" name="Lastname" required><br><br>
+   		<label>date of birth:</label>
+   		<input type="date" name="dateofbirth" required><br><br>
+   		<label>Email Address:</label>
+   		<input type="email" name="email" required><br><br>
+   		<label>Phoneno</label>
+   		<input type="tel"name="phoneno" required><br><br>
+   		<label>Address
+   		<textarea rows="10" cols="50"></textarea></label><br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+   		<input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <label>Choose the facility</label><br>
+        <input type="checkbox" id="Accounts" name="Account" value="Accounts">
+        <label for="account">Accounts <select name="accounts">
+        	<option>Fixed</option>
+        	<option>Current</option>
+        	<option>savings</option>
+        	<option>Recurring</option>
+        </select>
+        </label>
+        <br><br>
+   		<input type="checkbox" id="Loans" name="Loans" value="Loans">
+        <label for="loans">Loans<select name="loans">
+        	<option>Unsecured</option>
+        	<option>Secured</option>
+        	<option>Fixed</option>
+        	<option>Variable</option>
+        </select>
+        </label>
+        <br><br>
+        <input type="checkbox" id="card" name="card" value="card">
+        <label for="card">Card<select name="card">
+        	<option>ATM</option>
+        	<option>Debit</option>
+        	<option>credit</option>
+        	
+        </select>
+        </label><br><br>
+       <input type="button" onclick="clickalert()" value="Apply">
+       
+
+   	</form>
+  
+   </div>
+
+</body>
+</html>
